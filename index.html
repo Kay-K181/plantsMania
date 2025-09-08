@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/./images/plant-favicon.ico" rel="icon" type="image/x-icon">
+    <title>Plant World</title>
+</head>
+<body>
+<header>
+    <h1>Plants 👀... familiar to the eye, but strangers to our knowledge.</h1>
+</header>
+<main>
+    <img src="./images/homepagePlant.jpg" alt="plant in woodlands">
+    <p>Today I am giving you a little insight into the world of <span class="highlight">green</span></p>
+
+    <div class="card-container">
+        <section>
+            <h4>🌿 Safe or Poisonous?</h4>
+            <p>Find out if a plant is toxic to cats</p>
+            <img class="plantImage" src="images/greyCat.jpg" alt="scared cat">
+            <a href="./safePlants.html" class="btn">See toxic plants</a>
+        </section>
+
+        <section>
+            <h4>🌱 Find Your Plant Match</h4>
+            <p>Discover your ideal plant</p>
+            <img class="plantImage" src="./images/discoverPlant.jpg" alt="plant on head">
+            <a href="./idealPlant.html" class="btn">Take quiz</a>
+        </section>
+
+        <section>
+            <h4>📖 Plant Facts</h4>
+            <p>Fun facts</p>
+            <img class="plantImage" src="./images/lavender.jpg" alt="lavender">
+            <a href="./learnMore.html" class="btn">Learn more</a>
+        </section>
+    </div>
+</main>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f9fdf9;
+        color: #333;
+    }
+
+    header {
+        background: #2e7d32;
+        color: white;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 2rem auto ;
+        padding: 0 1rem;
+    }
+
+    img {
+        max-width: 1000px;
+        border-radius: 100px;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 20px 0;
+    }
+
+    .plantImage {
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+        padding-bottom: 10px;
+    }
+
+    section {
+        background: white;
+        border: 2px solid #4caf50;
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+        margin-bottom: 3rem;
+    }
+
+    section:hover {
+        transform: translateY(-5px);
+    }
+
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background: #4caf50;
+        border: none;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    .btn:hover {
+        background: #388e3c;
+    }
+
+    .highlight {
+        font-size: xx-large;
+        color: green;
+        font-weight: bold;
+    }
+</style>
